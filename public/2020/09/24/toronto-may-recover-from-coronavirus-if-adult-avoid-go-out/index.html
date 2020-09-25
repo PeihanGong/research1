@@ -62,7 +62,7 @@
 
   <article class="article">
     
-    <span class="article-duration">7 min read</span>
+    <span class="article-duration">8 min read</span>
     
 
     <h1 class="article-title">Toronto may recover from Coronavirus if adult avoid go out</h1>
@@ -75,14 +75,19 @@
       
 
 
-<p>#abstract:
-Not only Toronto but the whole world is suffering from the Coronavirus; hence we are thinking about under this challenging situation, is there anything the public can do to reduce the probability of being infected. This paper explores the dataset of COVID-19 Cases in Toronto in 2020, which contains all confirmed and probable cases and is managed by Toronto Public Health since the first case was reported in January 2020. We find that most patients above 80 years old are infected from Toronto health care settings while the young are mostly infected from close contact. Our findings are highly instructive for future epidemic related policies by implementing specific policy on a particular age group.</p>
-<p>#Introduction:</p>
+<div id="abstract" class="section level1">
+<h1>abstract:</h1>
+<p>Not only Toronto but the whole world is suffering from the Coronavirus; hence we are thinking about under this challenging situation, is there anything the public can do to reduce the probability of being infected. This paper explores the dataset of COVID-19 Cases in Toronto in 2020, which contains all confirmed and probable cases and is managed by Toronto Public Health since the first case was reported in January 2020. We find that most patients above 80 years old are infected from Toronto health care settings while the young are mostly infected from close contact. Our findings are highly instructive for future epidemic related policies by implementing specific policy on a particular age group.</p>
+</div>
+<div id="introduction" class="section level1">
+<h1>Introduction:</h1>
 <p>Coronavirus is a hard problem facing by the whole world and seriously impact our daily lives. In this paper, we aim to investigate what kind of people may have a higher rate of Coronavirus infection. In other words, is the rate of infection is uncommonly high for a group of people with a specific living habit or character? Our finding is focused on gender, age, source of infection, and the relationship between age group and infection source.</p>
 <p>After drawing the pie chart and bar plots based on the data with 16419 cases in Toronto, we initially find that gender is equally divided among all the cases. Also, most cases are between 20 to 59 years old, and the main infection source is close contact, outbreak-associated and community. While close contact means that the person was in close contact with a confirmed or probable COVID-19 case, outbreak-associated means that the case is associated with outbreaks of COVID-19 in Toronto healthcare institutions and other Toronto congregate settings, and community means that the cases reported no travel outside of Ontario, no known close contact, and no outbreak-associated. Moreover, we find as age groups getting older, the source of infection is more likely to be marked as outbreak-associated and less likely to be marked as close contact, travel and community.</p>
 <p>This paper first investigates a particular variable, such as gender, age, and infection source. Then we develop a relationship between the age and the source of infection. However, since all of these data are observational data, which means that these data are just gathered without any control of subjects from researchers, thus it is not rigorous enough to infer a causal relationship. Besides, the data only contain the cases in Toronto, so the result cannot be applied to other states or countries. In future work, we can use other regions’ data to investigate the characteristic of the infection patients further.</p>
-<p>#Data
-The COVID19-cases data is collected by Toronto Public Health and was combined and reported by the provincial communicable disease reporting system (iPHIS) and Toronto’s custom COVID-19 case management system (CORES). The data would be refreshed every week. The data we use in this paper contains the demographic, geographic, and severity information of confirmed and probable cases from the first case in January 2020 to the nearest case on September 16, 2020.</p>
+</div>
+<div id="data" class="section level1">
+<h1>Data</h1>
+<p>The COVID19-cases data is collected by Toronto Public Health and was combined and reported by the provincial communicable disease reporting system (iPHIS) and Toronto’s custom COVID-19 case management system (CORES). The data would be refreshed every week. The data we use in this paper contains the demographic, geographic, and severity information of confirmed and probable cases from the first case in January 2020 to the nearest case on September 16, 2020.</p>
 <pre class="r"><code>head(COVID19_cases)</code></pre>
 <pre><code>## # A tibble: 6 x 18
 ##    `_id` Assigned_ID `Outbreak Assoc… `Age Group` `Neighbourhood … FSA  
@@ -155,14 +160,38 @@ barplot(counts_3,
         legend = rownames(counts_3))</code></pre>
 <p><img src="/post/2015-07-23-r-rmarkdown_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
 <p>fig4:The graph above shows the distribution of the source of infection in each age group in Toronto. Among all the age groups, close contact is the main cause of being infected, while outbreak-associated is another main reason for the age group above 20. For the younger age group, close contact has a larger proportion than the outbreak-associated. However, as the age group getting older, the proportion of outbreak-associated increases.</p>
-<p>#Discussion
-Coronavirus is a hard problem facing by the whole world, and seriously impact our daily life. We cannot cure patients or develop a vaccine to stop the spread ofCoronavirus but we can find the common points of the people who suffer from the Coronavirus and help the public avoid being infected.</p>
+</div>
+<div id="discussion" class="section level1">
+<h1>Discussion</h1>
+<p>Coronavirus is a hard problem facing by the whole world, and seriously impact our daily life. We cannot cure patients or develop a vaccine to stop the spread ofCoronavirus but we can find the common points of the people who suffer from the Coronavirus and help the public avoid being infected.</p>
 <p>By analyzing the data we find that both male and female has a equal chance of being infected. Besides, the main group of people suffer from Coronavirus are the adult age from 20 to 59 and the main source of infection is close
 contact, outbreak association and community. In addition,We further analyze the source of infection in each of the age group. We find as the age group getting older, less people in that group are being infected from close contact,community and travel while more and more people are being marked as outbreak associated.</p>
 <p>Since the people who is marked as outbreak associated may mainly being infected from health care settings (e.g. retirement homes, hospitals, etc.)and congregate setting (such as homeless shelters) and we cannot forbidden people especially the elderly go to hospital, thus we can only suggest other people avoid unnecessary contact with others and the best way to reduce contact is to stay at home.</p>
-<p>##Weakness and next step
-The analysis is only based on the cases in Toronto, more data is needed in order to apply the result to other places. Moreover outbreak associated means the cases are associated with outbreaks of COVID-19 in Toronto healthcare institutions and healthcare settings (e.g. retirement homes, hospitals, etc.) and other Toronto congregate settings (such as homeless shelters). Thus the infection source of the cases are marked as out break associated may have many different situations but we do not know any detail. Thus, further research have to be done to deal with the problem.</p>
-<p>#Reference</p>
+<div id="weakness-and-next-step" class="section level2">
+<h2>Weakness and next step</h2>
+<p>The analysis is only based on the cases in Toronto, more data is needed in order to apply the result to other places. Moreover outbreak associated means the cases are associated with outbreaks of COVID-19 in Toronto healthcare institutions and healthcare settings (e.g. retirement homes, hospitals, etc.) and other Toronto congregate settings (such as homeless shelters). Thus the infection source of the cases are marked as out break associated may have many different situations but we do not know any detail. Thus, further research have to be done to deal with the problem.</p>
+</div>
+</div>
+<div id="references" class="section level1">
+<h1>References</h1>
+<ul>
+<li>Toronto Public Health. (2020, September 9). Open Data Dataset. City of Toronto Open Data Portal. <a href="https://open.toronto.ca/dataset/covid-19-cases-in-toronto/" class="uri">https://open.toronto.ca/dataset/covid-19-cases-in-toronto/</a></li>
+<li>Wickham et al., (2019). Welcome to the tidyverse. Journal of Open Source Software, 4(43),
+1686, <a href="https://doi.org/10.21105/joss.01686" class="uri">https://doi.org/10.21105/joss.01686</a></li>
+<li>R Core Team (2018). R: A language and environment for statistical computing. R Foundation
+for Statistical Computing, Vienna, Austria. URL <a href="https://www.R-project.org/" class="uri">https://www.R-project.org/</a>.</li>
+<li>David Meyer, Achim Zeileis, and Kurt Hornik (2020). vcd: Visualizing Categorical Data. R
+package version 1.4-8.</li>
+<li>Lemon, J. (2006) Plotrix: a package in the red light district of R. R-News, 6(4): 8-12.</li>
+<li>Hadley Wickham, Romain François, Lionel Henry and Kirill Müller (2020). dplyr: A Grammar
+of Data Manipulation. R package version 0.8.5. <a href="https://CRAN.R-project.org/package=dplyr" class="uri">https://CRAN.R-project.org/package=dplyr</a></li>
+<li>Hadley Wickham (2011). The Split-Apply-Combine Strategy for Data Analysis. Journal of
+Statistical Software, 40(1), 1-29. URL <a href="http://www.jstatsoft.org/v40/i01/" class="uri">http://www.jstatsoft.org/v40/i01/</a>.</li>
+<li>H. Wickham. ggplot2: Elegant Graphics for Data Analysis. Springer-Verlag New York, 2016.</li>
+<li>Hadley Wickham, Jim Hester and Romain Francois (2018). readr: Read Rectangular Text Data.
+R package version 1.3.1. <a href="https://CRAN.R-project.org/package=readr" class="uri">https://CRAN.R-project.org/package=readr</a></li>
+</ul>
+</div>
 
     </div>
   </article>
