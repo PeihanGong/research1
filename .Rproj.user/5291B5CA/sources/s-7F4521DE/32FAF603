@@ -3,22 +3,23 @@
     "path": "~/Desktop/blogdown-demo/content/post/2015-07-23-r-rmarkdown.Rmd",
     "project_path": "content/post/2015-07-23-r-rmarkdown.Rmd",
     "type": "r_markdown",
-    "hash": "4099931620",
+    "hash": "1028188575",
     "contents": "",
     "dirty": false,
     "created": 1601019037885.0,
     "source_on_save": false,
     "relative_order": 2,
     "properties": {
-        "cursorPosition": "3,16",
-        "scrollLine": "0"
+        "cursorPosition": "13,0",
+        "scrollLine": "0",
+        "docOutlineVisible": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1601019291,
+    "lastKnownWriteTime": 1601021357,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1601019291519,
+    "last_content_update": 1601021357227,
     "read_only": false,
     "read_only_alternatives": []
 }
