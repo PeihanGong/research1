@@ -1,8 +1,0 @@
-"0","COVID19_cases %>% "
-"0","  ggplot(aes(x = `Age Group`)) +"
-"0","  geom_bar(fill = ""skyblue"")+"
-"0","  labs(x = ""age group"","
-"0","       y = ""number of people"" ,"
-"0","       title = ""fig2:distribution of age among COVID-19 infection patients in Toronto"","
-"0","       caption = ""Source: Toronto Open Data Portal"" ) +"
-"0","  theme(axis.text.x=element_text(angle=30, hjust=1))"
